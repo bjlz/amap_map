@@ -355,6 +355,11 @@ public class MapController
         //不实现
     }
 
+    @Override
+    public void setInitialCircles(Object initialCircles) {
+        //不实现
+    }
+
 
     @Override
     public void setLogoPosition(int logoPosition) {

@@ -23,7 +23,7 @@ dependencies:
   stream_transform: ^2.0.0
 
   x_amap_base: ^1.0.3
-  x_common: ^1.0.4
+#  x_common: ^1.0.4
   # provider: ^6.1.1
   # x_amap_base:
   #   path: ../x_amap_base

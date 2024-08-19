@@ -58,4 +58,6 @@ public interface AMapOptionsSink extends UISettingsSink {
     public void setInitialPolylines(Object initialPolylines);
 
     public void setInitialPolygons(Object initialPolygons);
+
+    void setInitialCircles(Object initialCircles);
 }

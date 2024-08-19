@@ -30,10 +30,26 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+def flutterRoot = localProperties.getProperty('flutter.sdk')
 
 dependencies {
     implementation 'com.amap.api:3dmap-location-search:10.0.800_loc6.4.5_sea9.7.2'
-    implementation 'androidx.annotation:annotation:1.8.1'
+    implementation 'androidx.annotation:annotation:1.8.2'
+
+    compileOnly files("$flutterRoot/bin/cache/artifacts/engine/android-arm/flutter.jar")
 }
 

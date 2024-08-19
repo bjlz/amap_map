@@ -19,6 +19,8 @@ export 'polyline.dart';
 export 'polyline_updates.dart';
 export 'polygon.dart';
 export 'polygon_updates.dart';
+export 'circle.dart';
+export 'circle_updates.dart';
 export 'bitmap.dart';
 export 'extension_context.dart';
 export 'amap_extension.dart';

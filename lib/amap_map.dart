@@ -15,6 +15,8 @@ library amap_map;
 
 import 'dart:async';
 
+import 'package:amap_map/src/types/circle.dart';
+import 'package:amap_map/src/types/circle_updates.dart';
 import 'package:x_amap_base/x_amap_base.dart';
 import 'package:amap_map/src/core/amap_flutter_platform.dart';
 import 'package:amap_map/src/core/map_event.dart';
@@ -24,7 +26,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:x_common/utils/logger.dart';
 
 export 'package:amap_map/src/types/types.dart';
 
